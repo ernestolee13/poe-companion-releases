@@ -13,15 +13,19 @@ It never plays for you. No clicking, no key presses, no automatic trading. It sh
 - Reacts to entering an area, level-ups, deaths, whispers, and accepted trades, and remembers them.
 - Answers price questions in chaos, using poe.ninja and the official trade site.
 - Hover over an item and press Ctrl+D for a quick price panel. Ctrl+Alt+D gives a detailed appraisal. Korean items from the Kakao client work too.
-- Reads shared PoB links (pobb.in, poe.ninja/pob, maxroll.gg/poe/pob, poedb.tw/pob) and talks about the build from its summary.
+- Press Ctrl+Alt+D on a map and it reads the dangerous mods (reflect, reduced maximum resistances, no regeneration and the like) and says run, reroll or skip. Ask "build me a search for maps without reflect, quantity 80 or more" and it writes a string you can paste into the stash search box. Korean client, Korean string.
+- Reads shared PoB links (pobb.in, poe.ninja/pob, maxroll.gg/poe/pob, poedb.tw/pob). With the PoB calculation engine on (a one-time download of about 250 MB) it gives DPS and survivability deltas for an item swap, a gem swap or a passive.
+- Log in to the trade site inside the app and it can read your current character's gear and passives without a PoB export, for "how is my build" or "what am I missing". Read only, nothing is written to your account.
+- Crafting odds: ask "chance of fire resistance if I exalt these gloves" and it computes from the mod pool and spawn weights. Exalted, Regal and Augmentation are exact; Chaos, Alchemy, essences and fossils are simulated.
+- Remembers when you reached each act, lab attempts and campaign time, so "faster than my last character?" has an answer. It also writes stash search strings.
 - Looks up guides, patch notes, and poedb pages.
 - Lets you pick its name, speech style, personality, and look (a 3D VRM model, among others).
 
 ## What it does not do
 
-- The PoB calculation engine does not run for PoE1 yet. There are no DPS or survivability numbers, only a read of the build summary.
-- No crafting odds. For crafting questions it answers from general knowledge only.
-- There are no Korean passive or skill name tables, so it sometimes uses the English names.
+- The PoB engine cannot load builds with an Abyss timeless jewel (Amanamu, Kurgal and so on); those fall back to the summary comparison. The 3.30 tree arrives after PoB itself updates.
+- Crafting odds cover the plain prefix and suffix pool only. Influence, fossil-only and bench mods are left out, so real odds can be lower, and the answer says so.
+- Small unnamed passive nodes may be read in English.
 - It does not know 3.30 mechanics until the patch notes are out. When it is unsure, it says so and suggests checking the notes.
 - No auto-trading, auto-clicking, or macros.
 
@@ -31,7 +35,7 @@ It never plays for you. No clicking, no key presses, no automatic trading. It sh
 - Run the game in windowed or borderless mode. The overlay cannot show over true fullscreen.
 - One chat model key (see the free options below). A microphone is optional.
 
-Installer: `PoE1 Companion Setup 0.1.0.exe`
+Installer: `PoE1 Companion Setup <version>.exe` (the newest one on the releases page)
 Download: https://github.com/ernestolee13/poe-companion-releases/releases/latest
 
 The installer asks for administrator rights, because the Kakao client runs as administrator and the app needs the same level. PoE1 Companion runs in PoE1 mode from the first start, and it installs side by side with PoE2 Companion without sharing settings or history.

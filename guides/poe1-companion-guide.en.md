@@ -4,7 +4,7 @@ This guide goes from install to customizing your character to fixing problems. P
 
 ## 1. Install and first setup
 
-1. Run the installer: `PoE1 Companion Setup 0.1.0.exe` (https://github.com/ernestolee13/poe-companion-releases/releases/latest). It asks for administrator rights, because the Kakao client needs the same level.
+1. Run the newest installer, `PoE1 Companion Setup <version>.exe` (https://github.com/ernestolee13/poe-companion-releases/releases/latest). It asks for administrator rights, because the Kakao client needs the same level.
 2. PoE1 Companion starts in PoE1 mode. There is no game to choose.
 3. Check the game log path. The app looks first and shows what it found. If it finds nothing, pick the file yourself. There is also an auto-detect button.
    - Steam: `Steam\steamapps\common\Path of Exile\logs\Client.txt`
@@ -15,6 +15,8 @@ This guide goes from install to customizing your character to fixing problems. P
 6. Save and start the game. The companion reacts when you enter an area or level up.
 
 Run the game in windowed or borderless mode.
+
+In the game's UI options, turn on "Output all dialogue to chat". The companion then notices the league content you meet in a map (Einhar, Alva, an Abyss and so on) from the NPC lines. It keeps only which content it was, never the dialogue text. With the option off, only that feature is missing.
 
 On first launch a "Getting started" checklist appears: brain key, game log, your character info (optional), and a voice check (optional).
 
@@ -68,7 +70,8 @@ The app does not capture PrintScreen, so Windows' own PrintScreen still works. I
 ## 4. Prices and trading
 
 - Ctrl+D opens a quick search panel in the style of Awakened PoE Trade. Turn mod lines, sums, base type, corruption, item level, and rune sockets on or off and search again. While the panel answers, the companion stays quiet. You can turn the panel off in Settings > Tools.
-- Ctrl+Alt+D gives a detailed breakdown of the same item.
+- Ctrl+Alt+D gives a detailed breakdown of the same item. On a map it reads the dangerous mods and answers run, reroll or skip. With a build on record (a PoB link) it only counts the mods that hurt that build.
+- Stash search strings: say "make me a search for maps without physical reflect or no regen, quantity over 80" and it returns a string for the stash search box. Copy and paste it yourself. The companion never types into the game. Mods that did not fit the search box limit are listed separately.
 - Prices are in chaos. Items priced only in divines stay out of the chaos total.
 - The whisper button on a listing copies the whisper to your clipboard. You paste it into the game chat yourself. The app never sends it for you.
 - A price it could not check is reported as not found, never invented.
@@ -78,9 +81,11 @@ The app does not capture PrintScreen, so Windows' own PrintScreen still works. I
 
 - Paste a share link into the PoB field in Settings > Game > My character to register it as your current build. Other links you paste into chat are treated as reference builds.
 - Supported links: pobb.in, poe.ninja/pob, maxroll.gg/poe/pob, poedb.tw/pob.
-- The companion reads the build summary and talks about it. There is no PoB engine for PoE1 yet, so it does not calculate DPS or survivability. Even if you see a "PoB calculation engine" setting, do not expect it to work in PoE1.
-- It does not calculate crafting odds either.
-- Passives and skills have no Korean name tables, so it may use English names.
+- Turn on Settings > Character > PoB calculation engine and the app downloads the PoB sources and LuaJIT once (about 250 MB, ten-odd seconds). After that, "what if I swap to this belt", "this gem instead of that one" or "if I take this node" get DPS and survivability deltas. Copy the item in game (Ctrl+C) before you ask.
+- Builds with an Abyss timeless jewel cannot be loaded by the engine and get the summary comparison instead.
+- Log in to the trade site in the app's browser and "my build", "my gear" or "my character" read your current character's gear and passives directly. A registered PoB link takes priority. If the account name cannot be found, fill the account name field under Settings > Character > My character (Name#1234).
+- Crafting odds: copy the item and ask "chance of fire resistance if I exalt this"; it computes from the mod pool and spawn weights. Odds for Chaos or Alchemy on a fresh base are simulated and approximate, and influence and fossil-only mods are left out.
+- Passives and skill gems use the Kakao Korean names both ways. Only small unnamed nodes may come out in English.
 
 ## 6. Choosing a character model
 
