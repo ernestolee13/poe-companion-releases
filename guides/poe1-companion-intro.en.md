@@ -32,7 +32,7 @@ It never plays for you. No clicking, no key presses, no automatic trading. It sh
 - One chat model key (see the free options below). A microphone is optional.
 
 Installer: `PoE1 Companion Setup 0.1.0.exe`
-Download: [download link]
+Download: https://github.com/ernestolee13/poe-companion-releases/releases/latest
 
 The installer asks for administrator rights, because the Kakao client runs as administrator and the app needs the same level. PoE1 Companion runs in PoE1 mode from the first start, and it installs side by side with PoE2 Companion without sharing settings or history.
 

@@ -4,7 +4,7 @@
 
 ## 1. 설치와 첫 설정
 
-1. 설치 파일을 실행합니다: `PoE1 Companion Setup 0.1.0.exe` ([다운로드 링크]). 관리자 권한을 묻습니다. 카카오 클라이언트와 같은 권한이 필요해서입니다.
+1. 설치 파일을 실행합니다: `PoE1 Companion Setup 0.1.0.exe` (https://github.com/ernestolee13/poe-companion-releases/releases/latest). 관리자 권한을 묻습니다. 카카오 클라이언트와 같은 권한이 필요해서입니다.
 2. PoE1 Companion은 처음부터 PoE1 전용으로 켜집니다. 게임을 따로 고를 필요가 없습니다.
 3. 게임 로그 경로를 확인합니다. 앱이 먼저 찾아 보여 주고, 못 찾으면 직접 고릅니다. "자동 찾기" 버튼도 있습니다.
    - 스팀: `Steam\steamapps\common\Path of Exile\logs\Client.txt`

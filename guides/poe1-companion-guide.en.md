@@ -4,7 +4,7 @@ This guide goes from install to customizing your character to fixing problems. P
 
 ## 1. Install and first setup
 
-1. Run the installer: `PoE1 Companion Setup 0.1.0.exe` ([download link]). It asks for administrator rights, because the Kakao client needs the same level.
+1. Run the installer: `PoE1 Companion Setup 0.1.0.exe` (https://github.com/ernestolee13/poe-companion-releases/releases/latest). It asks for administrator rights, because the Kakao client needs the same level.
 2. PoE1 Companion starts in PoE1 mode. There is no game to choose.
 3. Check the game log path. The app looks first and shows what it found. If it finds nothing, pick the file yourself. There is also an auto-detect button.
    - Steam: `Steam\steamapps\common\Path of Exile\logs\Client.txt`

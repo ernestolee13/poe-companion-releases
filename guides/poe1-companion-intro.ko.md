@@ -32,7 +32,7 @@
 - 대화 모델 키 하나(아래 무료 방법 참고). 마이크는 선택입니다.
 
 설치 파일: `PoE1 Companion Setup 0.1.0.exe`
-받기: [다운로드 링크]
+받기: https://github.com/ernestolee13/poe-companion-releases/releases/latest
 
 설치할 때 관리자 권한을 묻습니다. 카카오 클라이언트가 관리자 권한으로 뜨기 때문에 같은 권한이 필요합니다. PoE1 Companion은 켜자마자 PoE1 전용으로 동작하고, PoE2 Companion과 나란히 설치해도 설정과 기록이 섞이지 않습니다.
 
