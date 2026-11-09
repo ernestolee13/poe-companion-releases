@@ -1,0 +1,207 @@
+# PoE1 Companion: User Guide
+
+This guide goes from install to customizing your character to fixing problems. Prices and limits for outside services were checked on 2026-11-09. For what the app is and does, see the overview (poe1-companion-intro.en.md).
+
+## 1. Install and first setup
+
+1. Run the installer: `PoE1 Companion Setup 0.1.0.exe` ([download link]). It asks for administrator rights, because the Kakao client needs the same level.
+2. PoE1 Companion starts in PoE1 mode. There is no game to choose.
+3. Check the game log path. The app looks first and shows what it found. If it finds nothing, pick the file yourself. There is also an auto-detect button.
+   - Steam: `Steam\steamapps\common\Path of Exile\logs\Client.txt`
+   - Standalone: `Grinding Gear Games\Path of Exile\logs\Client.txt`
+   - Kakao: under `Daum Games\Path of Exile\logs\`, either `KakaoClient.txt` or `Client.txt`
+4. Pick your league. When a new league opens, refresh the list. League names come live from the trade site.
+5. In Settings > Modules > Brain (chat), choose a preset (groq, gemini, openrouter, openai, deepseek, anthropic, ollama, or lm-studio) and paste your key. Press the connection test.
+6. Save and start the game. The companion reacts when you enter an area or level up.
+
+Run the game in windowed or borderless mode.
+
+On first launch a "Getting started" checklist appears: brain key, game log, your character info (optional), and a voice check (optional).
+
+### Where to get a free key (checked 2026-11-09)
+
+- Groq: sign up without a card. Free limits differ per model. Read the exact numbers on the limits page in your console.
+- Google AI Studio: get a key without a card. The app's gemini preset already holds the address (`https://generativelanguage.googleapis.com/v1beta/openai`). Free-tier input may be used to improve Google products.
+- OpenRouter: type a model name ending in ":free" into the model field. Limits are 20 requests per minute and 50 per day. Buy 10 or more credits once and the daily cap becomes 1,000.
+- GCP $300 trial: needs a payment method and a manual Vertex setup, so it is not recommended. Look at it only if the others are blocked.
+
+Leave the model field empty to use the preset's recommended model.
+
+## 2. How to talk to it
+
+Pick the microphone mode in Settings > Modules > Hearing (STT).
+
+- Always listening (default): sends each time you finish a sentence.
+- Push to talk: listens only while you hold the mic button.
+- Talk hotkey (default: the backtick key): press once to start listening, press again to send. It sends on its own after 30 seconds.
+
+A quiet room helps. While the companion is speaking, it only listens through a microphone with echo cancellation on. No microphone? Type your questions.
+
+### Things to say
+
+- Prices: "How many chaos is a divine?" or "How much is this item?"
+- Right now: "Where am I?" or "Why did I just die?" (If the log does not say, it will not guess.)
+- Builds: "Read this PoB link" or "Where is my build weak?"
+- Info: "Find what changed in this patch" or "Tell me how this boss works."
+- Farming: "What is a good way to earn chaos right now?"
+
+When it does not know, it says so. It cannot know 3.30 mechanics before the patch notes exist. When the companion says "check the patch notes", that is what it means.
+
+## 3. Hotkeys
+
+Change them in Settings > System > Hotkeys. Click the field, press your combination, and press Esc to cancel. Most combinations need Ctrl, Alt, or Shift.
+
+| Action | Default |
+| --- | --- |
+| Quick price panel | Ctrl+D |
+| Detailed appraisal | Ctrl+Alt+D |
+| Talk toggle | Backtick key |
+| Share screen (shows the companion your current screen) | PrintScreen, only while the game is in front |
+| Show or hide the feed overlay | Set in Settings |
+| Mute on or off | Set in Settings |
+| Show or hide reference images 1 to 5 | Set in Settings |
+
+The appraisal hotkeys work with your mouse over an item. The app presses Ctrl+C for you, then puts your old clipboard back. Turn on "only while the game window is in front" and it never sends keys to other apps. The other hotkeys only change what is on screen and send nothing to the game.
+
+The app does not capture PrintScreen, so Windows' own PrintScreen still works. If another program already uses a combination, the app tells you and picks a fallback key.
+
+## 4. Prices and trading
+
+- Ctrl+D opens a quick search panel in the style of Awakened PoE Trade. Turn mod lines, sums, base type, corruption, item level, and rune sockets on or off and search again. While the panel answers, the companion stays quiet. You can turn the panel off in Settings > Tools.
+- Ctrl+Alt+D gives a detailed breakdown of the same item.
+- Prices are in chaos. Items priced only in divines stay out of the chaos total.
+- The whisper button on a listing copies the whisper to your clipboard. You paste it into the game chat yourself. The app never sends it for you.
+- A price it could not check is reported as not found, never invented.
+- Some days the trade site is slow or blocks requests, and prices will not load.
+
+## 5. PoB builds
+
+- Paste a share link into the PoB field in Settings > Game > My character to register it as your current build. Other links you paste into chat are treated as reference builds.
+- Supported links: pobb.in, poe.ninja/pob, maxroll.gg/poe/pob, poedb.tw/pob.
+- The companion reads the build summary and talks about it. There is no PoB engine for PoE1 yet, so it does not calculate DPS or survivability. Even if you see a "PoB calculation engine" setting, do not expect it to work in PoE1.
+- It does not calculate crafting odds either.
+- Passives and skills have no Korean name tables, so it may use English names.
+
+## 6. Choosing a character model
+
+Pick a mode in Settings > Character > Avatar.
+
+- Gear: the default mascot. The app falls back to it if a model fails to load.
+- VRM (.vrm): Seed-san is built in. To use your own, choose a .vrm file in the path field.
+- Live2D (.model3.json or .zip): Live2D Cubism Core is not bundled. Press "Enable Live2D support" and, if you agree, the app downloads it from the official address to your PC. If you pick a zip, the app unpacks it and finds the .model3.json.
+
+In the look settings you set size (120 to 400 px) and idle opacity. Move the bar and you see it right away, but you must save to keep it. If the model has expressions or motions, "Emotion mapping" lets you assign them per emotion. Left empty, the app guesses from the names. I did not find a file size limit for VRM in the code. A very heavy model may run slowly.
+
+### Where to find models (checked 2026-11-09)
+
+- VRoid Hub: each model has its own terms. The fields are avatar use, violent expression, sexual expression, political and religious expression, commercial use (corporate and individual), redistribution, and modification. Read each one before you download. Pick a model that allows avatar use. Redistribute or modify only as far as it allows. If you plan to stream or post videos, read the commercial use field too.
+- Booth.pm: has free VRM models. Each shop sets its own terms, so read the usage terms on the product page.
+- VRoid Studio: make your own. The default presets are described as free for commercial use, but any material marked with special terms follows those terms.
+- Live2D: every model carries its own licence terms, sample models included. Check each model's terms yourself before you use it. If you are not sure, start with a VRM model whose licence flags are easy to read, such as one on VRoid Hub that allows what you need.
+
+Do not re-upload or share modified copies of someone else's model unless its terms allow it.
+
+## 7. Writing a personality
+
+Pick a profile or create one in Settings > Character. The fields:
+
+- Name.
+- Personality and speech style: free text. It never outranks the factual rules. Up to 2,000 characters.
+- Speech level: auto (read from your description), casual (banmal), or polite (jondaetmal). This matters for Korean voices.
+- Example lines: a situation (up to 20 characters) and a line (up to 120 characters), one per row. Up to 12 rows. Leave numbers out, because the model may repeat an example number as if it were fact.
+- Avoid list: up to 6 items, 30 characters each, split by commas.
+- Greetings: one per line, up to 8, 300 characters each.
+
+The whole card (description, examples, avoid list) reaches the model only up to 2,000 characters. If it runs long, example lines drop from the end, and 8 stay. Models follow a few real lines much better than adjectives.
+
+You can also import a Character Card V2 or V3 (PNG or JSON) made elsewhere with "Import card". It is added as a new profile and your current one is untouched. The card's instructions, scenario, and lorebook are stored but not applied. Text over 2,000 characters is cut. Export is JSON.
+
+The companion speaks the language you set in Settings (Korean or English). The examples below are written for an English-speaking companion; for a Korean one, write the same fields in Korean.
+
+### Example 1: calm veteran (casual tone)
+
+Text for the personality field:
+
+```
+A veteran exile who has played many leagues. Few words, calm.
+Speaks first and short when things go wrong. Credits a good play quietly.
+Says "I don't know" and suggests checking.
+Casual tone, one or two sentences. No lectures.
+```
+
+Example lines (situation / line):
+
+- Death / Down you go. Check your gear, then back in.
+- Danger / Health is low. Pull back.
+- Boss kill / Got it. Clean.
+- No price / I haven't seen that price. I won't make one up.
+- Level up / Level up. Let's look at your passives.
+- Long silence / Quiet. Rest if you need to, call me when you want.
+Avoid list: no spoilers, no unchecked prices, no long lectures, no emoji
+
+### Example 2: upbeat trade-savvy friend (casual tone)
+
+```
+A lively friend who loves the trade site and prices. Gets excited about good drops.
+Talks fast and bright, but believes numbers must be exact.
+Admits it when a price has not been checked.
+Casual tone, plenty of exclamations, never more than two sentences at a time.
+When you fail, comforts first, then suggests a fix.
+```
+
+- Rare drop / Whoa, that looks good! Let's check the price.
+- Death / Ouch, it's fine, it's fine. Days like this happen!
+- Trade whisper / A whisper! A customer. Go check.
+- No price / Couldn't get the price. I won't guess.
+- Trade question / If you're in a hurry, pricing a bit lower works. Which do you prefer?
+- Boss kill / Got him! That looked amazing!
+- Long silence / Hey, still alive? It's so quiet I'm bored!
+Avoid list: no spoilers, no unchecked prices, no long lectures, no emoji
+
+### Example 3: dry, sarcastic strategist (formal tone)
+
+```
+A fast, dry strategist who jokes with a straight face.
+Sarcastic but never crosses the line, and always adds something useful.
+Formal tone with some distance, one or two sentences.
+Shows little emotion, gives clear judgments. Says so when it doesn't know.
+```
+
+- Death / A foreseeable result. Check your resistances first.
+- Danger / Health is gone. There is no reason to keep standing there.
+- Rare drop / It looks usable. Check the price before you sell.
+- No price / I could not verify that price. I do not state numbers I don't know.
+- Build question / Gear first. Open resistances come before damage.
+- Boss kill / Defeated. Not bad.
+- Chat / I'm here. Tell me if you need something.
+Avoid list: no spoilers, no unchecked prices, no long lectures, no emoji
+
+All three fit the limits: each card body is far under 2,000 characters, there are no more than 12 example lines, situations are within 20 characters, lines within 120, and the avoid list has 4 items under 30 characters each.
+
+### Choosing a speech level
+
+- Casual reads like a friend. Polite keeps a distance and suits dry sarcasm.
+- On auto, the app reads the level from your description. If unsure, set it yourself.
+- Short banned phrases are followed better than long explanations.
+
+## 8. Troubleshooting
+
+| Symptom | What to check |
+| --- | --- |
+| Overlay is not visible | Switch the game to windowed or borderless mode. |
+| Companion ignores the game | Check the log path in Settings > Game. For Kakao, pick whichever of KakaoClient.txt or Client.txt in the logs folder was changed most recently. Also confirm the app was started as administrator. |
+| No answers | Check the brain preset and key, then press the connection test. A 402 means a billing or credit problem, and a rejected key means a wrong key. You may also have used up a free limit. |
+| No voice | With no key the app falls back to the edge-local voice. If there is still no sound, check mute and run the voice connection test. |
+| Speech is misheard | Try a quieter room and use accurate mode (240 MB). If it still frustrates you, switch to OpenAI speech recognition. |
+| Hotkey does nothing | Another program may use the same combination. Change it in the System tab. Also check the option that limits appraisal hotkeys to the game window. |
+| New league not in the list | Refresh the league list or type the name yourself. |
+| Price not found | Ask again in a moment. The trade site may be slow. |
+
+Log file: `%APPDATA%\@game-companion\desktop-poe1\logs\companion.log`
+Data folder: `<your user folder>\.companion\poe1\` (kept apart from PoE2 data)
+
+## 9. Privacy in short
+
+Your API keys live only in a config file on your PC, and nothing is sent to us. The only outside call the app makes on its own is the update check against GitHub. Whispers, chat lines, and your questions go to the chat model provider you picked. Free tiers may use your input for training. The overview has the details.
+
+Contact: help@vibestash.app
