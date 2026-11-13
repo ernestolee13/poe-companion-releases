@@ -1,6 +1,6 @@
 # PoE1 Companion setup, screen by screen
 
-Nine steps from install to character customization. The orange boxes mark the fields you touch at that step. Every screen is the real app (0.1.11) on Windows 11.
+Ten steps from install to character customization. The orange boxes mark the fields you touch at that step. Every screen is the real app (0.1.11) on Windows 11.
 
 ## 1. Install
 
@@ -8,14 +8,15 @@ Nine steps from install to character customization. The orange boxes mark the fi
 - When SmartScreen appears, click "More info", then "Run anyway". The installer is not signed yet, so this shows once.
 - After the install the app starts and one character appears on screen.
 
-## 2. First run
+## 2. First run and the 2.5D character
 
-- Click the character to open the feed. The "Getting started together" checklist at the top shows the order.
+- At first you see the gear mascot. Click it to open the feed; the "Getting started together" checklist at the top shows the order.
+- The first row, "Turn on the 2.5D character": click Open, agree to the Live2D terms once, the Cubism Core downloads and the default character Hiyori appears (right). Skip it if you plan to use another look.
 - Open Settings from the menu on the character's handle ("Open settings"). The tray icon menu has the same entry.
 
-![2. First run](img/setup/en/character-window.jpg)
+![2. First run and the 2.5D character](img/setup/en/feed-first-run.jpg)
 
-![2. First run](img/setup/en/feed-first-run.jpg)
+![2. First run and the 2.5D character](img/setup/ko/character-hiyori-bubble.jpg)
 
 ## 3. Brain key (the one field you need)
 
