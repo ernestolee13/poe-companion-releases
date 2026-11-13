@@ -29,6 +29,15 @@ On first launch a "Getting started" checklist appears: brain key, game log, your
 
 Leave the model field empty to use the preset's recommended model.
 
+
+### Web search: a free Tavily key (checked 2026-11-14)
+
+Ask about build trends or patch news the app doesn't know, and it searches the web for the answer. Without a key the settings header shows "search off" and answers come from your game log and prices only. Trial codes don't include web search.
+
+1. Sign up at tavily.com. The free plan gives 1,000 credits a month with no card; a basic search is 1 credit.
+2. Copy the API key (starts with tvly-) from the dashboard.
+3. In Settings > Modules > Search, turn on web search, set the preset to tavily, paste the key and save.
+
 ### If the key setup is a hassle: trial codes
 
 If getting a key is more than you want to deal with, email help@vibestash.app with "trial code" in the subject. You get one code that covers the brain, the voice and speech recognition at once, worth about $10 to $20 of usage, enough for a few weeks with no setup. Codes are limited, one per person. Pick "Trial gateway" under Settings > Modules > Brain and paste the code into the key field.
