@@ -33,6 +33,14 @@ Leave the model field empty to use the preset's recommended model.
 
 If getting a key is more than you want to deal with, email help@vibestash.app with "trial code" in the subject. You get one code that covers the brain, the voice and speech recognition at once, worth about $10 to $20 of usage, enough for a few weeks with no setup. Codes are limited, one per person. Pick "Trial gateway" under Settings > Modules > Brain and paste the code into the key field.
 
+### Voice: switch to Fish Audio's free model
+
+With no key you get the edge-local voice, which sounds robotic. Sign up at fish.audio (no card), create a key under API Keys in your account menu, then in Settings > Modules > Voice (TTS) pick "Fish Audio" as the provider, paste the key, Test connection, Save. Leave the model and voice fields empty to use s2.1-pro-free and the recommended voice. On a trial code you can skip this. Fish's free offer is announced until 2026-11-30; after that the app falls back to edge-local by itself.
+
+### What "Decisions (opener)" is
+
+Further down the Modules tab, "Decisions (opener)" is a small model that picks the short opener the companion says while it builds the answer. Switched on with an OpenAI-compatible key under "Advanced", it picks an opener that fits the moment; empty, one of the prepared openers is used at random. The answer itself is the same. You can leave it empty on day one.
+
 ## 2. How to talk to it
 
 Pick the microphone mode in Settings > Modules > Hearing (STT).
