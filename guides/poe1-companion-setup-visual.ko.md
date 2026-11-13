@@ -16,7 +16,7 @@
 
 ![2. 첫 실행과 2.5D 캐릭터 켜기](img/setup/ko/feed-first-run-6.jpg)
 
-![2. 첫 실행과 2.5D 캐릭터 켜기](img/setup/ko/character-hiyori-bubble.jpg)
+![2. 첫 실행과 2.5D 캐릭터 켜기](img/setup/ko/character-hiyori-bubble@2x.jpg)
 
 ## 3. 두뇌 키 넣기 (꼭 필요한 한 칸)
 
