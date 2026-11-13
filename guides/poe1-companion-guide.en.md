@@ -29,6 +29,10 @@ On first launch a "Getting started" checklist appears: brain key, game log, your
 
 Leave the model field empty to use the preset's recommended model.
 
+### If the key setup is a hassle: trial codes
+
+If getting a key is more than you want to deal with, email help@vibestash.app with "trial code" in the subject. You get one code that covers the brain, the voice and speech recognition at once, worth about $10 to $20 of usage, enough for a few weeks with no setup. Codes are limited, one per person. Pick "Trial gateway" under Settings > Modules > Brain and paste the code into the key field.
+
 ## 2. How to talk to it
 
 Pick the microphone mode in Settings > Modules > Hearing (STT).
