@@ -101,14 +101,25 @@ Pick a mode in Settings > Character > Avatar.
 
 In the look settings you set size (120 to 400 px) and idle opacity. Move the bar and you see it right away, but you must save to keep it. If the model has expressions or motions, "Emotion mapping" lets you assign them per emotion. Left empty, the app guesses from the names. I did not find a file size limit for VRM in the code. A very heavy model may run slowly.
 
-### Where to find models (checked 2026-11-09)
+### Where to find models and how to load them (as the sites looked on 2026-11-13)
 
-- VRoid Hub: each model has its own terms. The fields are avatar use, violent expression, sexual expression, political and religious expression, commercial use (corporate and individual), redistribution, and modification. Read each one before you download. Pick a model that allows avatar use. Redistribute or modify only as far as it allows. If you plan to stream or post videos, read the commercial use field too.
-- Booth.pm: has free VRM models. Each shop sets its own terms, so read the usage terms on the product page.
-- VRoid Studio: make your own. The default presets are described as free for commercial use, but any material marked with special terms follows those terms.
-- Live2D: every model carries its own licence terms, sample models included. Check each model's terms yourself before you use it. If you are not sure, start with a VRM model whose licence flags are easy to read, such as one on VRoid Hub that allows what you need.
+**VRoid Hub (hub.vroid.com)**: the largest source of VRM models. Downloading needs a pixiv account.
+1. On the list page open "Filter by conditions of use", tick "Third-party use: Allow", "Download: Allow" and "Avatar use: Allow", then Apply. Direct link: hub.vroid.com/en/models?is_downloadable=1&characterization_allowed_user=everyone
+2. On a model page check that "Can you use this model?" says Yes and read the "Conditions of use" line: Avatar Use, Violent acts, Sexual acts, Corporate use, Individual commercial use, Redistribution, Alterations, Attribution. Avatar Use: Allow is what this app needs. If you plan to stream or record, look at Individual commercial use too. Attribution: Required means credit the creator.
+3. "Use this model" takes you through the pixiv ID sign-in and gives you the .vrm file (VRM 0.0 or 1.0, both work).
+4. In the app: Settings > Character > Avatar > Mode "VRM avatar", pick the .vrm with the browse button next to the path field, Save. The character window redraws at once; if the file cannot be loaded it falls back to the default mascot.
 
-Do not re-upload or share modified copies of someone else's model unless its terms allow it.
+**BOOTH (booth.pm)**: has free VRM models too. booth.pm/en/search/VRM?max_price=0 shows 0 JPY items only, and the item page has a "Free Download" button. You still need a pixiv account, and the file stays in your Purchase History. Careful: the VRM search is full of VRChat-only avatars (unitypackage). Use only items whose file list contains a .vrm. Each shop has its own terms at the bottom of the item page.
+
+**VRoid Studio**: make your own model and export a .vrm. The default presets are described as fine for commercial use; specially marked materials carry their own conditions.
+
+**Live2D official samples (live2d.com/en/learn/sample)**: no login. About twenty models (Hiyori, Haru, Shizuku, Mark, Zundamon and more), each with a Download button. Read the "Free Material License Agreement" and the "Live2D Cubism Sample Data Terms of Use" first; Hatsune Miku and Unity-chan follow separate guidelines. The zip's runtime folder holds the .model3.json.
+1. In the app: Settings > Character > Live2D support > "Enable Live2D support", then "Agree and download" in the dialog. Cubism Core is Live2D Inc. software, not bundled, and is fetched from the official address at this point.
+2. Switch Mode to Live2D and pick the .model3.json or the downloaded zip; the app unpacks a zip and finds the .model3.json.
+
+Tried for real (2026-11-13, Windows 11): a public sample .vrm entered in the path field renders in the character window after Save, and switching back to the bundled Seed-san renders too. Size and opacity survive a restart. In the current build (0.1.10) a VRM size change shows only after a restart; the next build fixes that.
+
+Do not re-upload or redistribute someone else's model, altered or not, unless the conditions allow it.
 
 ## 7. Writing a personality
 
