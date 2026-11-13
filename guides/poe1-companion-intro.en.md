@@ -42,6 +42,8 @@ The installer asks for administrator rights, because the Kakao client runs as ad
 
 ## Start for free
 
+If getting a key is a hassle, there are trial codes. Email help@vibestash.app and you get one code that covers the brain, the voice and speech recognition at once, worth about $10 to $20 of usage, one per person. Below is the do-it-yourself free route.
+
 You need one chat model key. Voice output and speech recognition are free by default.
 
 ### Chat model (Settings > Modules > Brain)
