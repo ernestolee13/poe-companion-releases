@@ -16,7 +16,7 @@ Ten steps from install to character customization. The orange boxes mark the fie
 
 ![2. First run and the 2.5D character](img/setup/en/feed-first-run.jpg)
 
-![2. First run and the 2.5D character](img/setup/ko/character-hiyori-bubble.jpg)
+![2. First run and the 2.5D character](img/setup/ko/character-hiyori-bubble@2x.jpg)
 
 ## 3. Brain key (the one field you need)
 
