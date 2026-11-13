@@ -103,6 +103,7 @@ The app does not capture PrintScreen, so Windows' own PrintScreen still works. I
 
 Pick a mode in Settings > Character > Avatar.
 
+- The default is the 2.5D character Hiyori (Live2D's free sample). On first launch you see the gear mascot; the first row of the "Getting started together" checklist, "Turn on the 2.5D character", asks for the Live2D terms once, downloads the Cubism Core and switches to Hiyori. In Settings, "Built-in: use Hiyori" restores it.
 - Gear: the default mascot. The app falls back to it if a model fails to load.
 - VRM (.vrm): Seed-san is built in. To use your own, choose a .vrm file in the path field.
 - Live2D (.model3.json or .zip): Live2D Cubism Core is not bundled. Press "Enable Live2D support" and, if you agree, the app downloads it from the official address to your PC. If you pick a zip, the app unpacks it and finds the .model3.json.
