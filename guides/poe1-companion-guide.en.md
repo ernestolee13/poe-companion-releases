@@ -1,6 +1,6 @@
 # PoE1 Companion: User Guide
 
-This guide goes from install to customizing your character to fixing problems. Prices and limits for outside services were checked on 2026-11-09. For what the app is and does, see the overview (poe1-companion-intro.en.md).
+This guide goes from install to customizing your character to fixing problems. Prices and limits for outside services were checked on 2026-11-09. For what the app is and does, see the overview (poe1-companion-intro.en.md). If screens are easier than text, start with the [screen-by-screen setup guide](poe1-companion-setup-visual.en.md).
 
 ## 1. Install and first setup
 
