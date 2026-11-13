@@ -136,6 +136,14 @@ The whole card (description, examples, avoid list) reaches the model only up to 
 
 You can also import a Character Card V2 or V3 (PNG or JSON) made elsewhere with "Import card". It is added as a new profile and your current one is untouched. The card's instructions, scenario, and lorebook are stored but not applied. Text over 2,000 characters is cut. Export is JSON.
 
+Importing a character card, step by step:
+1. A card is a PNG (the data hides inside the image) or a JSON file holding a personality, greetings and example lines. "Export character" in SillyTavern produces this format, and card-sharing communities hand out the same files. Some of those sites are mostly adult content; use their filters.
+2. Settings > Character > Character card > "Import card (PNG, JSON)" and pick the file.
+3. A line "Added as a new profile: name (format)" and a thumbnail appear, and that profile becomes the active one. It survives a restart.
+4. An English card comes in as English text. The companion still answers in the language you set, but the greeting plays as written, so edit the greeting field if you want. Descriptions over 2,000 characters are cut.
+
+Tried for real (2026-11-13, Windows 11): importing a public sample card (Seraphina, V3 PNG) added the profile with one greeting and a thumbnail, and the next replies used that name.
+
 The companion speaks the language you set in Settings (Korean or English). The examples below are written for an English-speaking companion; for a Korean one, write the same fields in Korean.
 
 ### Example 1: calm veteran (casual tone)
