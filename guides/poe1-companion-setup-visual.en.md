@@ -34,16 +34,25 @@ Nine steps from install to character customization. The orange boxes mark the fi
 
 ![3-1. Starting with a trial code](img/setup/en/G2-modules-trial.jpg)
 
-## 4. Voice and hearing
+## 4. Voice: the free Fish Audio model sounds much better
 
-- The defaults are fine: the voice is edge-local (free) and hearing runs on this PC, so no key is needed.
-- **1** Enable voice output: turn it off to play quietly; answers then come as bubbles and feed text.
-- **2** Provider (voice): edge-local (free) is the default. Switch if you have a Fish Audio key.
-- **3** Enable voice input: turn it off if you have no microphone and type in the feed instead.
-- **4** Provider (hearing): Local is the default. The model downloads once.
-- **5** Input mode: always listening by default; push-to-talk is available.
+- With no key you get the edge-local voice, which sounds robotic. Switching to Fish Audio's free model takes a few minutes.
+- Sign up at fish.audio (no card) and create a key under API Keys in your account menu.
+- **1** Provider (voice): pick "Fish Audio". Leave the model and voice fields empty to use s2.1-pro-free and the recommended voice.
+- **2** API key: paste the Fish key, Test connection, Save. If you are on a trial code, leave this field alone; the code covers the voice too.
+- Fish's free offer is announced until 2026-11-30; after that the app falls back to edge-local by itself. To play quietly, turn off "Enable voice output".
+- Leave hearing at its defaults: recognition runs on this PC and needs no key. Without a microphone, turn off "Enable voice input" and type in the feed.
 
-![4. Voice and hearing](img/setup/en/G3-modules-voice.jpg)
+![4. Voice: the free Fish Audio model sounds much better](img/setup/en/G3b-voice-fish.jpg)
+
+## 4-1. Decisions (opener): a word before the answer
+
+- Further down the Modules tab, "Decisions (opener)". While the companion builds an answer, it says a short opener first, like "hold on" or "hm, that one"; this module picks one that fits the moment.
+- **1** Use the opener decision model: on, a small model picks; off or without a key, one of the prepared openers is used at random. The answer itself is the same either way.
+- **2** API key (OpenAI-compatible): under "Advanced". An OpenAI key or any OpenAI-compatible key works. Leaving it empty shows a note, not a warning.
+- You can skip this on day one and come back when the openers feel off.
+
+![4-1. Decisions (opener): a word before the answer](img/setup/en/G8-decisions.jpg)
 
 ## 5. Game log and trade site
 
