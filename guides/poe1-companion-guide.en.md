@@ -20,6 +20,20 @@ In the game's UI options, turn on "Output all dialogue to chat". The companion t
 
 On first launch a "Getting started" checklist appears: brain key, game log, your character info (optional), and a voice check (optional).
 
+### What each module does, and what adding it improves
+
+One brain key is enough to run the app. Everything else is optional and improves one part when you add it, mostly with free keys.
+
+| Module | What it does | Without it | Free way to fill it |
+|---|---|---|---|
+| Brain (required) | All conversation and reasoning | No answers | A free Gemini or Groq key (below) |
+| Voice | Reads answers aloud | The default edge voice (free, no key), noticeably robotic | A free Fish Audio key (below). Trial codes: pick from 12 Korean voices |
+| Hearing | Turns your speech into text | Typing only | On by default as local recognition on this PC, no key. The model downloads once on first use |
+| Web search | Finds current info such as build trends and patch news | Answers from your game log and prices only, says it doesn't know recent news | A free Tavily key, 1,000 searches a month (below) |
+| Vision | Reads screenshots you paste | Can't see pictures | The brain's key plus an image-capable model name (for example Gemini flash-lite) |
+| Jev (fast judge) | Decides in about 0.5 s whether to answer, acknowledge or stay quiet; finds its way on build sites | Answers everything at length; the brain does site navigation, more slowly | On automatically when the brain uses an OpenRouter key (about 0.0002 USD a decision, so a little credit is needed). Included in trial codes |
+| Decisions (opener) | Picks the short filler line spoken while the answer is being made | A random prepared filler | Any OpenAI-compatible key |
+
 ### Where to get a free key (checked 2026-11-09)
 
 - Groq: sign up without a card (console.groq.com/keys). The app's default model openai/gpt-oss-20b has a free limit of 30 requests per minute and 1,000 per day (2026-11-11). Llama 3.1 8B became paid-only, so do not type it into the model field.
