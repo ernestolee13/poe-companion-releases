@@ -51,15 +51,15 @@ You need one chat model key. Voice output and speech recognition are free by def
 | Groq free tier | No | Limits differ per model, and Groq's docs point to the limits page in your console for your plan. Third-party pages put the larger chat models at about 1,000 requests per day. When you hit the cap, it stops for the day. |
 | Google AI Studio (Gemini) | No | Input and output tokens are free on the free tier for the Flash models. Per-minute and per-day limits vary by model; Google's docs point to the rate limit page in AI Studio. Google's pricing page says content sent on the free tier is used to improve Google products. |
 | OpenRouter ":free" models | No | Only models with ":free" in the name. 20 requests per minute, 50 per day. Buy 10 or more credits once and the daily cap goes to 1,000. |
-| GCP $300 trial | Yes | Sign-up needs a payment method. The app has no Vertex preset, so you would set up a compatible endpoint and authentication yourself. It is the hardest route. The amount and duration could not be confirmed on Google's page (commonly stated: $300 for 90 days). |
+| GCP $300 trial | Yes | Does not work. Google's own page (checked 2026-11-11) says the $300 credit cannot pay for the Gemini API in AI Studio, and the Vertex AI route excludes accounts created after 2026-11-16. |
 
-For a first try, pick Groq or Gemini. Sign-up takes a few minutes. Paste the key into Settings and press the connection test.
+For a first try, pick Gemini (AI Studio). Sign-up takes a few minutes, and the app's default model gemini-3.5-flash-lite has a free limit of 15 requests per minute and 500 per day (AI Studio rate limit page, 2026-11-11). Groq's free tier gives openai/gpt-oss-20b 30 requests per minute and 1,000 per day; the former default Llama 3.1 8B became paid-only. Paste the key into Settings and press the connection test.
 
 You can also run a local model (Ollama or LM Studio). No key needed, but you have to start the local server first.
 
 ### Voice (Settings > Modules > Voice)
 
-The default is Fish Audio's `s2.1-pro-free` model. Get a key from a Fish Audio account and paste it in. As of 2026-11-09 it needs no card and has no hard character cap, only a fair use policy. It is best effort with no guarantee, and Fish says requests may be used to improve their model. The end date of the free offer is stated inconsistently, so it could not be confirmed.
+The default is Fish Audio's `s2.1-pro-free` model. Get a key from a Fish Audio account and paste it in. As of 2026-11-09 it needs no card and has no hard character cap, only a fair use policy. It is best effort with no guarantee, and Fish says requests may be used to improve their model. The free offer runs until 2026-11-30 according to fish.audio/developers (checked 2026-11-11). After that the app switches to the free edge-local voice by itself.
 
 With no key, the app switches to the free edge-local voice by itself. It sounds a little less natural, but it works. That voice is Microsoft's online service too, so the text it reads goes over the internet.
 
