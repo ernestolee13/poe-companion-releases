@@ -22,10 +22,10 @@ On first launch a "Getting started" checklist appears: brain key, game log, your
 
 ### Where to get a free key (checked 2026-11-09)
 
-- Groq: sign up without a card. Free limits differ per model. Read the exact numbers on the limits page in your console.
-- Google AI Studio: get a key without a card. The app's gemini preset already holds the address (`https://generativelanguage.googleapis.com/v1beta/openai`). Free-tier input may be used to improve Google products.
+- Groq: sign up without a card (console.groq.com/keys). The app's default model openai/gpt-oss-20b has a free limit of 30 requests per minute and 1,000 per day (2026-11-11). Llama 3.1 8B became paid-only, so do not type it into the model field.
+- Google AI Studio: get a key without a card (aistudio.google.com/apikey). The app's default model gemini-3.5-flash-lite has a free limit of 15 requests per minute and 500 per day, and the 2.5 models are closed to new accounts (2026-11-11). Free-tier input may be used to improve Google products.
 - OpenRouter: type a model name ending in ":free" into the model field. Limits are 20 requests per minute and 50 per day. Buy 10 or more credits once and the daily cap becomes 1,000.
-- GCP $300 trial: needs a payment method and a manual Vertex setup, so it is not recommended. Look at it only if the others are blocked.
+- GCP $300 trial: does not work. Google's own page says the $300 credit cannot pay for the Gemini API in AI Studio, and Vertex AI excludes accounts created after 2026-11-16 (checked 2026-11-11).
 
 Leave the model field empty to use the preset's recommended model.
 
