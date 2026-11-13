@@ -24,3 +24,9 @@ Both apps install side by side and keep separate settings and history. The insta
 ## 문의 / Contact
 
 help@vibestash.app
+
+## Third-party notices / 오픈소스 고지
+
+Bundled third-party components and their licenses (libuiohook LGPL-3.0, sherpa-onnx and transformers.js Apache-2.0, Live2D sample model, Seed-san VRM, Path of Building, data sources) are listed in [NOTICES.md](NOTICES.md). Models the app downloads on first use (SenseVoice-Small under the FunASR Model License 1.1, Silero VAD under MIT, the Path of Building engine under MIT) are named with their licenses at the download step.
+
+설치본에 포함된 서드파티 구성 요소와 라이선스는 [NOTICES.md](NOTICES.md)에 있습니다. 첫 사용 때 내려받는 모델(SenseVoice-Small, Silero VAD, PoB 계산 엔진)은 내려받는 화면에서 이름과 라이선스를 표시합니다.
