@@ -15,7 +15,10 @@ It never plays for you. No clicking, no key presses, no automatic trading. It sh
 - Hover over an item and press Ctrl+D for a quick price panel. Ctrl+Alt+D gives a detailed appraisal. Korean items from the Kakao client work too.
 - Press Ctrl+Alt+D on a map and it reads the dangerous mods (reflect, reduced maximum resistances, no regeneration and the like) and says run, reroll or skip. Ask "build me a search for maps without reflect, quantity 80 or more" and it writes a string you can paste into the stash search box. Korean client, Korean string.
 - Reads shared PoB links (pobb.in, poe.ninja/pob, maxroll.gg/poe/pob, poedb.tw/pob). With the PoB calculation engine on (a one-time download of about 250 MB) it gives DPS and survivability deltas for an item swap, a gem swap or a passive.
-- Log in to the trade site inside the app and it can read your current character's gear and passives without a PoB export, for "how is my build" or "what am I missing". Read only, nothing is written to your account.
+- Log in to the trade site inside the app with your own account (Kakao or global) and it can read your current character's gear and passives without a PoB export, for "how is my build" or "what am I missing". It also builds your own PoB from the character automatically, gear mods included. The login survives restarts. Read only, nothing is written to your account.
+- Gear upgrade plans: say "plan upgrades to fix my resists with 10 divines" and it works out from your PoB numbers how far you are short on the four resistances and life, keeps your uniques and locked slots, and splits the budget over the weakest slots. It asks before searching; say yes and it picks listings per slot with prices and trade links, then checks them together in PoB.
+- Register several reference builds by name ("save this as a reference build called 'Gamer static'") and compare by name, including passive differences, the next nodes to take, and what-ifs such as "what if I take X and Y together".
+- Finds a creator's PoB: "find 4Easy's static strike campaign PoB and save it" registers the PoB link from the video description as a reference build. Build guide links from maxroll, poe-vault and mobalytics are read for their PoB too.
 - Crafting odds: ask "chance of fire resistance if I exalt these gloves" and it computes from the mod pool and spawn weights. Exalted, Regal and Augmentation are exact; Chaos, Alchemy, essences and fossils are simulated.
 - Remembers when you reached each act, lab attempts and campaign time, so "faster than my last character?" has an answer. It also writes stash search strings.
 - Looks up guides, patch notes, and poedb pages.
@@ -88,8 +91,11 @@ Cloud recognition is usually better at Korean, but local recognition is enough t
 - One exception is a trial token ("Trial gateway"). Your questions then pass through a gateway the developer runs, on their way to Anthropic. The gateway does not store or log what you say; it keeps only usage numbers per token (tokens used and cost). Put in your own key instead and the gateway is not involved.
 - Free tiers may use your input to improve or train their models. Do not say anything sensitive.
 - Text for speech goes to the voice service you picked. With local recognition, your microphone audio never leaves the PC.
-- Price lookups go to the official trade site and poe.ninja.
+- Price lookups go to the official trade site and poe.ninja. Finding a PoB on YouTube goes to YouTube, and reading a build guide goes to that guide's site.
+- You log in to the trade site yourself in the in-app browser. The app never sees your password and keeps only the login cookies, encrypted, on this PC.
+- A bug report is never sent by the app. It leaves only when you check it and copy and paste it yourself. API keys, trial codes and trade cookies are never written to the log file.
 
 ## Contact
 
-help@vibestash.app
+- Email: help@vibestash.app
+- Discord "PoE Companion": https://discord.gg/cTN8FhmCjs (questions, bug reports, trial codes)
