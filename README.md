@@ -1,5 +1,12 @@
 # PoE Companion 설치본과 안내 / Installers and guides
 
+<p align="center">
+  <a href="https://github.com/ernestolee13/poe-companion-releases/releases/latest"><img alt="Download" src="https://img.shields.io/github/v/release/ernestolee13/poe-companion-releases?label=Download&style=for-the-badge&color=2f6f4f"></a>
+  <a href="https://discord.gg/cTN8FhmCjs"><img alt="Discord" src="https://img.shields.io/badge/Discord-%EC%B0%B8%EC%97%AC%20%2F%20Join-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
+  <a href="guides/poe1-companion-guide.ko.md"><img alt="가이드" src="https://img.shields.io/badge/%EA%B0%80%EC%9D%B4%EB%93%9C-%ED%95%9C%EA%B5%AD%EC%96%B4-555?style=for-the-badge"></a>
+  <a href="guides/poe1-companion-guide.en.md"><img alt="Guide" src="https://img.shields.io/badge/Guide-English-555?style=for-the-badge"></a>
+</p>
+
 Path of Exile 1과 Path of Exile 2를 위한 음성 동료 앱의 설치본을 여기서 받습니다. 코드는 비공개이고, 이 저장소에는 설치 파일과 안내 문서만 있습니다.
 
 This repository holds the Windows installers and the guides for the voice companion apps for Path of Exile 1 and Path of Exile 2. The source code is private; only releases and documents live here.
@@ -23,7 +30,8 @@ Both apps install side by side and keep separate settings and history. The insta
 
 ## 문의 / Contact
 
-help@vibestash.app
+- 디스코드 / Discord: https://discord.gg/cTN8FhmCjs (버그 제보, 질문, 업데이트 소식 / bug reports, questions, release news)
+- 메일 / Email: help@vibestash.app
 
 ## Third-party notices / 오픈소스 고지
 
